@@ -7,6 +7,10 @@
 3. 複製 .env `cp .env.example .env`
 4. 生成 laravel key `docker exec laravel-test-php-fpm-1 php artisan key:generate`
 
-## 呼叫 API
+## Run test
+
+`docker exec laravel-test-php-fpm-1 composer test-in-docker`
+
+## Call API
 
 `http://localhost:8088/api/currency_exchange?source=TWD&target=TWD&aount=100`
