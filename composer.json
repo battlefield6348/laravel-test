@@ -45,6 +45,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "test-in-docker": [
+            "phpunit -d memory_limit=256M -c phpunit.xml"
         ]
     },
     "extra": {
